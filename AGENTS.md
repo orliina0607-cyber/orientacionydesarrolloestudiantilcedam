@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Site chrome (header, footer, SOS help button, confetti overlay) lives in `src/routes/__root.tsx`; pages only render their content. Why: every page shares the same school frame.
+- Each game is a self-contained component in `src/components/games/`, with its content in `src/lib/games-data.ts` and point values in `src/lib/game-rules.ts` (tested). Why: text and scoring can change without touching game logic.
+- Canvas drawings read colors from CSS tokens via `cssVar()`; never hardcode theme colors in canvas code. Why: canvas and page stay visually consistent.
