@@ -16,8 +16,8 @@ export function SiteHeader() {
             className="h-14 w-14 rounded-2xl border-2 border-sun-soft bg-card object-contain shadow-soft"
           />
           <span className="leading-tight">
-            <span className="block font-display text-2xl font-bold tracking-wide text-navy sm:text-3xl">
-              CEDAM
+            <span className="block font-display text-xl font-bold tracking-wide text-navy sm:text-2xl">
+              Colegio Bilingüe CEDAM
             </span>
             <span className="block text-xs font-bold text-muted-foreground sm:text-sm">
               Orientación y Desarrollo Estudiantil
