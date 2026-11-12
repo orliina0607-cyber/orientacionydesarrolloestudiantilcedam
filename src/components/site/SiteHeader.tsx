@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { GraduationCap } from "lucide-react";
+import logoAsset from "@/assets/logo-cedam.png.asset.json";
 
 const navClass =
   "font-display font-semibold rounded-full px-4 py-2 text-sm sm:text-base text-navy transition-colors hover:bg-sun-soft";
@@ -10,9 +10,11 @@ export function SiteHeader() {
     <header className="header-cloud sticky top-0 z-40 bg-card px-4 pb-5 pt-3 shadow-pop sm:px-8">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3">
         <Link to="/" className="flex items-center gap-3">
-          <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary text-primary-foreground shadow-soft">
-            <GraduationCap className="h-7 w-7" />
-          </span>
+          <img
+            src={logoAsset.url}
+            alt="Logo del Colegio Bilingüe CEDAM"
+            className="h-14 w-14 rounded-2xl border-2 border-sun-soft bg-card object-contain shadow-soft"
+          />
           <span className="leading-tight">
             <span className="block font-display text-2xl font-bold tracking-wide text-navy sm:text-3xl">
               CEDAM
