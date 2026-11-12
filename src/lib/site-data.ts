@@ -130,6 +130,6 @@ export const FAMILY_TIPS: { title: string; items: string[]; link?: boolean }[] =
 export const EVENTIFICA_URL = "https://app.eventifica.com/inicio";
 
 export const COUNSELORS = [
-  { name: "Diego Alejandro Tello Briceño", role: "Orientador Escolar y Psicosocial CEDAM", tone: "pink" as const },
-  { name: "Lina Sofía Ortiz Ramirez", role: "Orientadora Escolar y Pedagógica CEDAM", tone: "sky" as const },
+  { name: "Diego Alejandro Tello Briceño", role: "Orientador Escolar", tone: "pink" as const },
+  { name: "Lina Sofía Ortiz Ramirez", role: "Orientadora Escolar", tone: "sky" as const },
 ];
