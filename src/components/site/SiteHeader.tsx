@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import logoAsset from "@/assets/logo-cedam.png.asset.json";
+import logoImg from "@/assets/logo.png";
 
 const navClass =
   "font-display font-semibold rounded-full px-4 py-2 text-sm sm:text-base text-navy transition-colors hover:bg-sun-soft";
@@ -11,7 +11,7 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3">
         <Link to="/" className="flex items-center gap-3">
           <img
-            src={logoAsset.url}
+            src={logoImg}
             alt="Logo del Colegio Bilingüe CEDAM"
             className="h-14 w-14 rounded-2xl border-2 border-sun-soft bg-card object-contain shadow-soft"
           />
